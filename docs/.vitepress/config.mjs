@@ -9,7 +9,7 @@ export default defineConfig({
     // nav导航栏 左边的logo旁边的文字
     siteTitle: "竹枝",
     // 网站左上角的logo图标
-    logo: "/amin2.png",
+    logo: "/amin2.jpg",
     nav: [
       { text: "首页", link: "/" },
       {
