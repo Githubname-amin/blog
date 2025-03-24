@@ -21,8 +21,8 @@ features:
   - title:  前端工程师
     details: 一年中厂开发经验，能够快速实现前端需求
     link: /frontend/index 
-  - title: 自有编程
-    details: 接一些日常外包，在家能养活自己
+  - title: 学习编程
+    details: 喜欢记录知识点，陆续将笔记搬运开放
   - title: AI爱好者
     details: 拥抱新事物（但是近期苦恼于走出新手村......）
 ---

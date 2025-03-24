@@ -10,6 +10,9 @@ export default defineConfig({
     siteTitle: "竹枝",
     // 网站左上角的logo图标
     logo: "/amin2.jpg",
+    head: [
+      ['link', { rel: 'icon', href: '/amin2.jpg' }],
+    ],
     nav: [
       { text: "首页", link: "/" },
       {
@@ -19,12 +22,13 @@ export default defineConfig({
             text: "前端",
             link: "/frontend",
             items: [
-              { text: "Javascript相关", link: "/frontend/javascript.md" },
-              { text: "ES6相关", link: "/frontend/es6.md" },
+              // { text: "Javascript相关", link: "/frontend/javascript.md" },
+              // { text: "ES6相关", link: "/frontend/es6.md" },
             ],
           },
           {
             text: "后端",
+            // link: "/backend",
             items: [
               { text: "Python", link: "/backend/python" },
               { text: "Node", link: "/backend/node" },
@@ -77,7 +81,7 @@ export default defineConfig({
                 items: [
                   {
                     text: "原型和原型链",
-                    link: "./frontend/javascript/props.md",
+                    link: "/frontend/javascript/props.md",
                   },
                   {
                     text: "Javascript中的继承",
@@ -452,6 +456,34 @@ export default defineConfig({
             ],
           },
         ],
+      },
+      "/backend/": {
+        text: "后端",
+        // 开启折叠按钮
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            text: "Python",
+            items: [
+              {
+                text: "基础", items: [
+                  { text: "尝试1", link: "/backend/python/基础/尝试1.md" }]
+              },
+            ]
+          },
+          {
+            text: "Node",
+            items: [
+              {
+                text: "基础",
+                items: [
+                  { text: "尝试1", link: "/backend/node/基础/尝试1.md" }
+                ]
+              }
+            ]
+          }
+        ]
       },
       "/blockchain/": {
         text: "区块链学习笔记",
