@@ -62,6 +62,13 @@ export default defineConfig({
               { text: "炖牛腩", link: "/other/food/打工储备粮：炖牛腩.md" },
             ],
           },
+          {
+            text: "皇家御用画师",
+            items: [
+              { text: "小熊", link: "/other/painting/Saturday/index.md" },
+              { text: "猛牛", link: "/other/painting/Bull/index.md" },
+            ],
+          },
         ],
       },
     ],
