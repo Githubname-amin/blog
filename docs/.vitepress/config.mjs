@@ -30,8 +30,9 @@ export default defineConfig({
             text: "后端",
             // link: "/backend",
             items: [
-              { text: "Python", link: "/backend/python" },
-              { text: "Node", link: "/backend/node" },
+              { text: "Python", link: "/python" },
+              { text: "Node", link: "/node" },
+              { text: "Docker", link: "/docker" },
             ],
           },
           { text: "区块链", link: "/blockchain" },
@@ -127,24 +128,12 @@ export default defineConfig({
                     link: "/frontend/javascript/柯里化.md",
                   },
                   {
-                    text: "V8引擎的垃圾回收机制",
-                    link: "/frontend/javascript/V8引擎的垃圾回收机制.md",
-                  },
-                  {
-                    text: "浮点数精度 缺失问题",
-                    link: "/frontend/javascript/浮点数精度 缺失问题.md",
-                  },
-                  {
-                    text: "事件循环机制",
-                    link: "/frontend/javascript/事件循环机制.md",
-                  },
-                  {
-                    text: "数组扁平化",
-                    link: "/frontend/javascript/数组扁平化.md",
-                  },
-                  {
                     text: "JavaScript的数据类型",
                     link: "/frontend/javascript/JavaScript的数据类型.md",
+                  },
+                  {
+                    text: "NaN",
+                    link: "/frontend/javascript/NaN.md",
                   },
                   {
                     text: "数据类型的检测方法",
@@ -162,6 +151,23 @@ export default defineConfig({
                     text: "IIFE立即执行匿名函数",
                     link: "/frontend/javascript/IIFE立即执行匿名函数.md",
                   },
+                  {
+                    text: "V8引擎的垃圾回收机制",
+                    link: "/frontend/javascript/V8引擎的垃圾回收机制.md",
+                  },
+                  {
+                    text: "浮点数精度缺失问题",
+                    link: "/frontend/javascript/浮点数精度缺失问题.md",
+                  },
+                  {
+                    text: "事件循环机制",
+                    link: "/frontend/javascript/事件循环机制.md",
+                  },
+                  {
+                    text: "数组扁平化",
+                    link: "/frontend/javascript/数组扁平化.md",
+                  },
+
                 ],
               },
               {
@@ -464,31 +470,37 @@ export default defineConfig({
           },
         ],
       },
-      "/backend/": {
-        text: "后端",
+      "/python/": {
+        text: "Python",
+        // 开启折叠按钮
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      "/node/": {
+        text: "Node",
+        // 开启折叠按钮
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      "/docker/": {
+        text: "Docker",
         // 开启折叠按钮
         collapsible: true,
         collapsed: true,
         items: [
           {
-            text: "Python",
+            text: "基础使用",
             items: [
-              {
-                text: "基础", items: [
-                  { text: "尝试1", link: "/backend/python/基础/尝试1.md" }]
-              },
-            ]
+              { text: "基础语法", link: "/docker/基础/基础语法.md" },
+            ],
           },
           {
-            text: "Node",
+            text: "场景使用",
             items: [
-              {
-                text: "基础",
-                items: [
-                  { text: "尝试1", link: "/backend/node/基础/尝试1.md" }
-                ]
-              }
-            ]
+              { text: "简易摄像装置部署到一批设备上", link: "/docker/场景/实际应用1.md" }
+            ],
           }
         ]
       },
