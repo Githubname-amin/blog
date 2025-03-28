@@ -18,11 +18,11 @@ hero:
       link: https://github.com/Githubname-amin
 
 features:
-  - title:  前端工程师
-    details: 一年中厂开发经验，能够快速实现前端需求
+  - title:  前端工程师(微型全沾工程师)
+    details: ToB and ToC工作都经历过。啥都会点，主爱前端
     link: /frontend/index 
-  - title: 学习编程
-    details: 喜欢记录知识点，陆续将笔记搬运开放
   - title: AI爱好者
     details: 拥抱新事物（但是近期苦恼于走出新手村......）
+  - title: ENFJ
+    details: 究极无敌热爱生活，我爱我的朋友们！！！！！
 ---
